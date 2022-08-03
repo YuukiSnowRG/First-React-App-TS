@@ -24,7 +24,7 @@ function Home() {
 
   function handleAddStudent(){
     /* o handleAddStudent é activado quando o input button é apertado
-  ele cria um student do template newStudent e adiciona a lista de arrays com a função setStudents */
+    ele cria um student do template newStudent e adiciona a lista de arrays com a função setStudents */
     const newStudent = {  
       name: studentName,
       time: new Date().toLocaleTimeString("pt-br", {
@@ -42,15 +42,15 @@ function Home() {
     o... ou spread operator e para assegurar que todos os vetores continuem irmãos no 
     mesmo nivel do vetor  */
   }
-  /* toda vez que chamarmos essa funçção ele vai criar um novo objeto 
+  /* toda vez que chamarmos essa função ele vai criar um novo objeto 
   que vai ter 2 propriedades, o name que vamos pegar do estado
   StudentName que ta armazenando o conteúdo atual do input
   e time que vamos pegar do horario atual
   
-  e depois que o objeto é montado nos adicionamos ao estado setStudents*/
+  e depois que o objeto é montado nos adicionamos ao estado com setStudents*/
   const [user, setUser] = useState<User>({} as User)
-/* aqui tipamos que o user é do tipo User
-que começa com um objeto vazio com template User */
+    /* aqui tipamos que o user é do tipo User
+    que começa com um objeto vazio com template User */
 
   useEffect(()=>{
     /* corpo do useEffect, ações que queremos que execute */
